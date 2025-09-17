@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$PEPEPEGASUS — Meme Coin of Rainbows</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="PepePegasus logo" class="logo" />
+      <h1 class="title">$PEPEPEGASUS</h1>
+      <p class="tagline">A winged frog‑pegasus flies through flower fields to the rainbow’s end, where a pot of gold awaits.</p>
+      <div class="banner">🦄🐸🌈 PEPEPEGASUS IS FLYING TO THE RAINBOW’S GOLD POT! 🌸💰</div>
+      <!-- Verification badge: show that the project has been certified and patented -->
+      <div class="verified">
+        <!-- Shield‑check icon: combines a shield outline with a check mark to signal security/verification (a common motif used on crypto sites) -->
+        <svg class="shield-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 12l2 2l4 -4"></path>
+          <path d="M12 2l7 4v6c0 5-3.8 9 -7 10c-3.2-1 -7 -5 -7 -10v-6l7 -4"></path>
+        </svg>
+        <span>Verified &amp; Patented – Official</span>
+      </div>
+      <div class="countdowns">
+        <div class="countdown">
+          <h3>Launch in:</h3>
+          <div class="timer" id="timer-launch">
+            <span><span id="d1">--</span> <small>days</small></span>
+            <span><span id="h1">--</span> <small>hours</small></span>
+            <span><span id="m1">--</span> <small>mins</small></span>
+            <span><span id="s1">--</span> <small>secs</small></span>
+          </div>
+        </div>
+        <div class="countdown">
+          <h3>Injection in:</h3>
+          <div class="timer" id="timer-inject">
+            <span><span id="d2">--</span> <small>days</small></span>
+            <span><span id="h2">--</span> <small>hours</small></span>
+            <span><span id="m2">--</span> <small>mins</small></span>
+            <span><span id="s2">--</span> <small>secs</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="live">
+        <span class="dot"></span><span class="label">LIVE</span>
+        <span class="sep">•</span>
+        <span class="members" id="memberCount">10,867</span>
+        <span class="muted">members</span>
+        <span class="sep">•</span>
+        <span class="online" id="onlineNow">1,093</span>
+        <span class="muted">online now</span>
+      </div>
+      <a href="#" class="cta" id="buy-link">Buy on pump.fun</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-illustration.png" alt="PepePegasus hero" />
+    </div>
+
+    <!-- Floating decorative icons for subtle movement -->
+    <div class="floating-icons">
+      <span class="icon icon1">💎</span>
+      <span class="icon icon2">🚀</span>
+      <span class="icon icon3">🔥</span>
+      <span class="icon icon4">✨</span>
+      <span class="icon icon5">🎉</span>
+      <span class="icon icon6">🌈</span>
+    </div>
+  </header>
+
+  <section class="about fade-section hidden">
+    <h2>What is <span class="token">$PEPEPEGASUS</span>?</h2>
+    <p>$PEPEPEGASUS is a whimsical meme coin inspired by the mythical frog‑pegasus hybrid. It’s all about fun, community and chasing rainbows. A €1M injection is planned 7 days after launch.</p>
+  </section>
+
+  <!-- Support / Wallet section: displays a wallet address and a dynamically updating donation amount. Donations support the creators and will be injected into the coin after 7 days. -->
+  <section class="wallet fade-section hidden">
+    <h2 class="wallet-title">Support the Creators</h2>
+    <p class="wallet-desc">Send your support to help fuel the injection fund:</p>
+    <div class="address-container">
+      <span id="walletAddress" class="address">Solana.36sK5NMZG7ZbdKTvdvU1hUJQXfrqtfL81zigYsVvkyvG</span>
+      <button class="copy-btn" id="copyAddressBtn" title="Copy wallet address">Copy</button>
+    </div>
+    <div class="wallet-stats">
+      <span class="amount" id="walletAmount">€10,000</span>
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p class="wallet-note">Funds raised here will be injected into the coin 7 days after launch.</p>
+    </div>
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
