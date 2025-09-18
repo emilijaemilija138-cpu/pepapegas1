@@ -69,6 +69,24 @@
     </div>
   </section>
 
+  <!-- Game section: play to earn $PEPEPEGASUS and climb the leaderboard -->
+  <section class="game fade-section hidden">
+    <h2 class="game-title">Play &amp; Earn</h2>
+    <p class="game-instruction">Move the PepePegasus with the arrow keys to collect coins and avoid obstacles. Catching coins earns you $PEPEPEGASUS. Your coin balance carries over between sessions up until the launch date, so you can keep playing every day and build your stash. Enter your name or Gmail at the end for the local leaderboard.</p>
+    <canvas id="gameCanvas" width="600" height="300"></canvas>
+    <div class="score-display">Coins collected: <span id="gameScore">0</span></div>
+    <p class="total-display">Your total coins collected so far: <span id="totalCoinsDisplay">0</span></p>
+    <button id="startGameBtn" class="game-btn">Start Game</button>
+    <div id="game-over" class="game-over hidden">
+      <p>Game over! You collected <span id="finalScore">0</span> coins.</p>
+      <label for="playerName">Name or Gmail (optional):</label>
+      <input type="text" id="playerName" placeholder="Enter your name or Gmail" />
+      <button id="submitScoreBtn" class="game-btn">Submit Score</button>
+    </div>
+    <h3>Leaderboard</h3>
+    <ol id="leaderboard"></ol>
+  </section>
+
   <script src="scripts/main.js"></script>
 </body>
 </html>
